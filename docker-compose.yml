@@ -1,0 +1,28 @@
+services:
+  coupon-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: coupon-api
+    ports:
+      - "8080:8080"
+    environment:
+      # Configurações sobrescrevíveis via variáveis de ambiente
+      SPRING_DATASOURCE_URL: jdbc:h2:mem:coupondb
+      SPRING_DATASOURCE_DRIVER_CLASS_NAME: org.h2.Driver
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: ""
+      SPRING_JPA_DATABASE_PLATFORM: org.hibernate.dialect.H2Dialect
+      SPRING_H2_CONSOLE_ENABLED: "true"
+      SPRING_H2_CONSOLE_SETTINGS_WEB_ALLOW_OTHERS: "true"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://localhost:8080/api/v1/coupons || exit 1",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 20s
+    restart: unless-stopped

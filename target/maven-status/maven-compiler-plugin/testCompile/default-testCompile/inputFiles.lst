@@ -1,0 +1,5 @@
+/home/theusarch/dev/projects/java/src/test/java/com/example/couponapi/service/CouponQueryServiceTest.java
+/home/theusarch/dev/projects/java/src/test/java/com/example/couponapi/entity/CouponTest.java
+/home/theusarch/dev/projects/java/src/test/java/com/example/couponapi/service/CouponCreationServiceTest.java
+/home/theusarch/dev/projects/java/src/test/java/com/example/couponapi/service/CouponDeletionServiceTest.java
+/home/theusarch/dev/projects/java/src/test/java/com/example/couponapi/integration/CouponApiIntegrationTest.java

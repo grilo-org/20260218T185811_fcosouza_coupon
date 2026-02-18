@@ -1,0 +1,12 @@
+com/example/couponapi/service/CouponCreationServiceTest$ValidationFailures.class
+com/example/couponapi/service/CouponQueryServiceTest.class
+com/example/couponapi/entity/CouponTest.class
+com/example/couponapi/service/CouponDeletionServiceTest.class
+com/example/couponapi/service/CouponCreationServiceTest.class
+com/example/couponapi/integration/CouponApiIntegrationTest.class
+com/example/couponapi/entity/CouponTest$ValidateDiscountValue.class
+com/example/couponapi/entity/CouponTest$ValidateExpirationDate.class
+com/example/couponapi/entity/CouponTest$ValidateCode.class
+com/example/couponapi/entity/CouponTest$SanitizeCode.class
+com/example/couponapi/service/CouponCreationServiceTest$HappyPath.class
+com/example/couponapi/entity/CouponTest$SoftDelete.class
